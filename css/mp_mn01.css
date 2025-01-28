@@ -10,11 +10,12 @@ body {
     max-width: 400px; /* Mimics a mobile width */
     margin: auto;
     background: #fff;
-    min-height: 100vh;
+    min-height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     overflow: hidden;
+    height: 500px
 }
 
 /* Top Navigation Bar */
