@@ -9,7 +9,6 @@ body {
     width: 100%;
     max-width: 400px; /* Mimics a mobile width */
     margin: auto;
-    border: 1px solid #000;
     background: #fff;
     min-height: 100vh;
     display: flex;
@@ -24,7 +23,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 10px 0px 10px 0px;
-    border-bottom: 2px solid black;
+    border: 2px solid black;
     background: #fff;
 }
 
@@ -67,7 +66,7 @@ body {
     background: #fff;
     color: #000;
     cursor: pointer;
-    margin-left: 280px;
+    margin-left: 200px;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
@@ -100,6 +99,18 @@ body {
     background: linear-gradient(to bottom, #005bb5, #004494);
     transform: scale(1.05);
     transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.footer{
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    background: #ffffff;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: auto;
+    border-top: 1px solid grey;
 }
 
 /* Single column for small screens */
