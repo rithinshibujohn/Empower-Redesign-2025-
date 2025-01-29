@@ -10,8 +10,8 @@ html, body {
 }
 
 .container {
-    height: 100vh; /* Forces full viewport height */
-    max-height: 100vh; /* Prevents extra height */
+    height: 100dvh; /* Forces full viewport height */
+    max-height: 100dvh; /* Prevents extra height */
     overflow-y: auto; /* Allows scrolling only inside the container if needed */
 }
 /* Body */
@@ -28,8 +28,8 @@ body {
     width: 90%; /* Allows flexibility */
     max-width: 400px;
     background: #fff;
-    height: 100vh; /* Forces full viewport height */
-    max-height: 100vh; /* Prevents extra height */
+    height: 100dvh; /* Forces full viewport height */
+    max-height: 100dvh; /* Prevents extra height */
     overflow-y: auto; /* Allows scrolling only inside the container if needed */
     display: flex;
     flex-direction: column;
