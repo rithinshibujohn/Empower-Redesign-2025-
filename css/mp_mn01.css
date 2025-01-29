@@ -4,7 +4,16 @@
     padding: 0;
     box-sizing: border-box;
 }
+html, body {
+    height: 100%;
+    overflow: hidden; /* Prevents scrolling */
+}
 
+.container {
+    height: 100vh; /* Forces full viewport height */
+    max-height: 100vh; /* Prevents extra height */
+    overflow-y: auto; /* Allows scrolling only inside the container if needed */
+}
 /* Body */
 body {
     font-family: Arial, sans-serif;
@@ -12,7 +21,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
 }
 
 /* Container */
