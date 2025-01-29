@@ -6,14 +6,15 @@
 }
 html, body {
     height: 100%;
-    /* overflow: hidden; Prevents scrolling */
+    overflow: hidden; /* Prevents scrolling */
 }
 
 .container {
-    height: 100dvh; /* Forces full viewport height */
+    height: 100dvh; /* Uses dynamic viewport height */
     max-height: 100dvh; /* Prevents extra height */
     overflow-y: auto; /* Allows scrolling only inside the container if needed */
 }
+
 /* Body */
 body {
     font-family: Arial, sans-serif;
