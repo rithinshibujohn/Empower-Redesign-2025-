@@ -26,203 +26,205 @@
         <!-- Menu Button -->
         <button class="menu-button" onclick="window.location.href='mp_mn01.html';">Menu</button>
         <!-- Button Grid -->
-        <div class="dashboard data mt-2" id="dashboard1" style="overflow: auto; width: 100%;">
+        <div class="card dashboard data mt-2" id="dashboard1" style="overflow: auto; width: 100%;">
             <!-- Opportunities Table -->
-            <div class="card mb-3">
-                <div class="hhd" style="display: flex;">
-                    <div class="bg-success text-white text-left" style=" min-width: 50%; ">
-                        &nbsp;Opportunities
-                    </div>
-                    <div style="background-color: #ffffff;min-width: 50%;border-bottom: 2px solid #28a745;">
-                    
-                    </div>
-                </div>        
-                <table class="table table-borderless table-sm mb-0">
-                    <tbody>
-                        <tr>
-                            <td>Open Orders</td>
-                            <td class="text-right">20</td>
-                        </tr>
-                        <tr>
-                            <td>Open Order Value</td>
-                            <td class="text-right">12,350</td>
-                        </tr>
-                        <tr>
-                            <td>Back Order Value</td>
-                            <td class="text-right">12,405</td>
-                        </tr>
-                        <tr>
-                            <td>Back Order Items #</td>
-                            <td class="text-right">35</td>
-                        </tr>
-                        <tr>
-                            <td>Open Quotations Value</td>
-                            <td class="text-right">1,23,506</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-            <div class="card mb-3">
-                <div class="hhd" style="display: flex;">
-                    <div style="background-color: #ffffff;min-width: 50%;border-bottom: 2px solid #17a2b8;">
-                    
-                    </div>
-                    <div class="bg-info text-white text-right" style=" min-width: 50%;">
-                        &nbsp;&nbsp;Purchases &nbsp;
-                    </div>
-                </div>
-                <table class="table table-borderless table-sm mb-0">
-                    <tbody>
-                        <tr>
-                            <td>Open Purchase Order</td>
-                            <td class="text-right">12,305.0</td>
-                        </tr>
-                        <tr>
-                            <td>Total Invoices Payable</td>
-                            <td class="text-right">23,451.0</td>
-                        </tr>
-                        <tr>
-                            <td>Payable Amt Due</td>
-                            <td class="text-right">3,451.0</td>
-                        </tr>
-                        <tr>
-                            <td>Next Payable Dt</td>
-                            <td class="text-right"></td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-                <!-- Cashflow Table -->
-                <div class="card mb-3">
+             <div class="insidedash" style="padding: 10px;">
+                <div class="mb-3">
                     <div class="hhd" style="display: flex;">
-                        <div class="bg-danger text-white text-left" style=" min-width: 50%;">
-                            &nbsp;Cashflow
+                        <div class="bg-success text-white text-left" style=" min-width: 50%; ">
+                            &nbsp;Opportunities
                         </div>
-                        <div style="background-color: #ffffff;min-width: 50%;border-bottom: 2px solid #dc3545;">
+                        <div style="background-color: #ffffff;min-width: 50%;border-bottom: 2px solid #28a745;">
                         
+                        </div>
+                    </div>        
+                    <table class="table table-borderless table-sm mb-0">
+                        <tbody>
+                            <tr>
+                                <td>Open Orders</td>
+                                <td class="text-right">20</td>
+                            </tr>
+                            <tr>
+                                <td>Open Order Value</td>
+                                <td class="text-right">12,350</td>
+                            </tr>
+                            <tr>
+                                <td>Back Order Value</td>
+                                <td class="text-right">12,405</td>
+                            </tr>
+                            <tr>
+                                <td>Back Order Items #</td>
+                                <td class="text-right">35</td>
+                            </tr>
+                            <tr>
+                                <td>Open Quotations Value</td>
+                                <td class="text-right">1,23,506</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="mb-3">
+                    <div class="hhd" style="display: flex;">
+                        <div style="background-color: #ffffff;min-width: 50%;border-bottom: 2px solid #17a2b8;">
+                        
+                        </div>
+                        <div class="bg-info text-white text-right" style=" min-width: 50%;">
+                            &nbsp;&nbsp;Purchases &nbsp;
                         </div>
                     </div>
                     <table class="table table-borderless table-sm mb-0">
                         <tbody>
                             <tr>
-                                <td>Total Receivables</td>
-                                <td class="text-right"></td>
+                                <td>Open Purchase Order</td>
+                                <td class="text-right">12,305.0</td>
                             </tr>
                             <tr>
-                                <td>Total Payables</td>
-                                <td class="text-right"></td>
+                                <td>Total Invoices Payable</td>
+                                <td class="text-right">23,451.0</td>
                             </tr>
                             <tr>
-                                <td>Receivables Today</td>
-                                <td class="text-right"></td>
+                                <td>Payable Amt Due</td>
+                                <td class="text-right">3,451.0</td>
                             </tr>
                             <tr>
-                                <td>Payables Today</td>
+                                <td>Next Payable Dt</td>
                                 <td class="text-right"></td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
-
+                    <!-- Cashflow Table -->
+                    <div class="mb-3">
+                        <div class="hhd" style="display: flex;">
+                            <div class="bg-danger text-white text-left" style=" min-width: 50%;">
+                                &nbsp;Cashflow
+                            </div>
+                            <div style="background-color: #ffffff;min-width: 50%;border-bottom: 2px solid #dc3545;">
+                            
+                            </div>
+                        </div>
+                        <table class="table table-borderless table-sm mb-0">
+                            <tbody>
+                                <tr>
+                                    <td>Total Receivables</td>
+                                    <td class="text-right">2560</td>
+                                </tr>
+                                <tr>
+                                    <td>Total Payables</td>
+                                    <td class="text-right">12210</td>
+                                </tr>
+                                <tr>
+                                    <td>Receivables Today</td>
+                                    <td class="text-right">2525</td>
+                                </tr>
+                                <tr>
+                                    <td>Payables Today</td>
+                                    <td class="text-right">4144</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+            </div>    
         </div>
-        <div class="dashboard data mt-2" id="dashboard2" style="overflow: auto; width: 100%; background:#dc3545;">
+        <div class="card dashboard data mt-2" id="dashboard2" style="overflow: auto; width: 100%;">
             <!-- Opportunities Table -->
-            <div class="card mb-3">
-                <div class="hhd" style="display: flex;">
-                    <div class="bg-success text-white text-left" style=" min-width: 50%; ">
-                        &nbsp;Opportunities
-                    </div>
-                    <div style="background-color: #ffffff;min-width: 50%;border-bottom: 2px solid #28a745;">
-                    
-                    </div>
-                </div>        
-                <table class="table table-borderless table-sm mb-0">
-                    <tbody>
-                        <tr>
-                            <td>Open Orders</td>
-                            <td class="text-right">20</td>
-                        </tr>
-                        <tr>
-                            <td>Open Order Value</td>
-                            <td class="text-right">12,350</td>
-                        </tr>
-                        <tr>
-                            <td>Back Order Value</td>
-                            <td class="text-right">12,405</td>
-                        </tr>
-                        <tr>
-                            <td>Back Order Items #</td>
-                            <td class="text-right">35</td>
-                        </tr>
-                        <tr>
-                            <td>Open Quotations Value</td>
-                            <td class="text-right">1,23,506</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-            <div class="card mb-3">
-                <div class="hhd" style="display: flex;">
-                    <div style="background-color: #ffffff;min-width: 50%;border-bottom: 2px solid #17a2b8;">
-                    
-                    </div>
-                    <div class="bg-info text-white text-right" style=" min-width: 50%;">
-                        &nbsp;&nbsp;Purchases &nbsp;
-                    </div>
-                </div>
-                <table class="table table-borderless table-sm mb-0">
-                    <tbody>
-                        <tr>
-                            <td>Open Purchase Order</td>
-                            <td class="text-right">12,305.0</td>
-                        </tr>
-                        <tr>
-                            <td>Total Invoices Payable</td>
-                            <td class="text-right">23,451.0</td>
-                        </tr>
-                        <tr>
-                            <td>Payable Amt Due</td>
-                            <td class="text-right">3,451.0</td>
-                        </tr>
-                        <tr>
-                            <td>Next Payable Dt</td>
-                            <td class="text-right"></td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-                <!-- Cashflow Table -->
-                <div class="card mb-3">
+             <div class="insidedash" style="padding: 10px; background:red">
+                <div class="mb-3">
                     <div class="hhd" style="display: flex;">
-                        <div class="bg-danger text-white text-left" style=" min-width: 50%;">
-                            &nbsp;Cashflow
+                        <div class="bg-success text-white text-left" style=" min-width: 50%; ">
+                            &nbsp;Opportunities
                         </div>
-                        <div style="background-color: #ffffff;min-width: 50%;border-bottom: 2px solid #dc3545;">
+                        <div style="background-color: #ffffff;min-width: 50%;border-bottom: 2px solid #28a745;">
                         
+                        </div>
+                    </div>        
+                    <table class="table table-borderless table-sm mb-0">
+                        <tbody>
+                            <tr>
+                                <td>Open Orders</td>
+                                <td class="text-right">20</td>
+                            </tr>
+                            <tr>
+                                <td>Open Order Value</td>
+                                <td class="text-right">12,350</td>
+                            </tr>
+                            <tr>
+                                <td>Back Order Value</td>
+                                <td class="text-right">12,405</td>
+                            </tr>
+                            <tr>
+                                <td>Back Order Items #</td>
+                                <td class="text-right">35</td>
+                            </tr>
+                            <tr>
+                                <td>Open Quotations Value</td>
+                                <td class="text-right">1,23,506</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="mb-3">
+                    <div class="hhd" style="display: flex;">
+                        <div style="background-color: #ffffff;min-width: 50%;border-bottom: 2px solid #17a2b8;">
+                        
+                        </div>
+                        <div class="bg-info text-white text-right" style=" min-width: 50%;">
+                            &nbsp;&nbsp;Purchases &nbsp;
                         </div>
                     </div>
                     <table class="table table-borderless table-sm mb-0">
                         <tbody>
                             <tr>
-                                <td>Total Receivables</td>
-                                <td class="text-right"></td>
+                                <td>Open Purchase Order</td>
+                                <td class="text-right">12,305.0</td>
                             </tr>
                             <tr>
-                                <td>Total Payables</td>
-                                <td class="text-right"></td>
+                                <td>Total Invoices Payable</td>
+                                <td class="text-right">23,451.0</td>
                             </tr>
                             <tr>
-                                <td>Receivables Today</td>
-                                <td class="text-right"></td>
+                                <td>Payable Amt Due</td>
+                                <td class="text-right">3,451.0</td>
                             </tr>
                             <tr>
-                                <td>Payables Today</td>
+                                <td>Next Payable Dt</td>
                                 <td class="text-right"></td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
-
+                    <!-- Cashflow Table -->
+                    <div class="mb-3">
+                        <div class="hhd" style="display: flex;">
+                            <div class="bg-danger text-white text-left" style=" min-width: 50%;">
+                                &nbsp;Cashflow
+                            </div>
+                            <div style="background-color: #ffffff;min-width: 50%;border-bottom: 2px solid #dc3545;">
+                            
+                            </div>
+                        </div>
+                        <table class="table table-borderless table-sm mb-0">
+                            <tbody>
+                                <tr>
+                                    <td>Total Receivables</td>
+                                    <td class="text-right">2560</td>
+                                </tr>
+                                <tr>
+                                    <td>Total Payables</td>
+                                    <td class="text-right">12210</td>
+                                </tr>
+                                <tr>
+                                    <td>Receivables Today</td>
+                                    <td class="text-right">2525</td>
+                                </tr>
+                                <tr>
+                                    <td>Payables Today</td>
+                                    <td class="text-right">4144</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+            </div>    
         </div>
     <div class="buttons mb-2 mt-2">
     </div>      
