@@ -194,9 +194,9 @@ footer {
 
 .footer {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 10px; /* Optional: Adds some padding around the elements */
+    justify-content: space-between;
+    width: 100%;
 }
 
 .footer button {
@@ -206,3 +206,4 @@ footer {
 .text-right{
     text-align: right;
 }
+
