@@ -229,11 +229,11 @@
     <div class="buttons mb-2 mt-2">
     </div>      
     <footer class="footer">
-        <button style="border: none; background:none; " onclick="prev1()"><svg style="color: #ffa700;" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-left-circle-fill" viewBox="0 0 16 16">
+        <button id="prev1"  style="border: none; background:none; " onclick="prev1()"><svg style="color: #ffa700;" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-left-circle-fill" viewBox="0 0 16 16">
             <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0m3.5 7.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5z"/>
           </svg></button>
         <img src="img/daveanlogo.png" alt="" height="20px">
-        <button style="border: none; background:none; " onclick="next1()"><svg style="color: #008b32;" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-right-circle-fill" viewBox="0 0 16 16">
+        <button id="next1" style="border: none; background:none; " onclick="next1()"><svg style="color: #008b32;" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-right-circle-fill" viewBox="0 0 16 16">
             <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z"/>
           </svg></button>
     </footer>
@@ -242,17 +242,22 @@
     $(document).ready(function () {
         // Hide specific search bars on page load
         $('#dashboard2').hide();
-      });
+    });
+
+    $("#next1").click(function() {
+        $("#dashboard1").fadeOut(300, function() {
+            $("#dashboard2").fadeIn(300);
+        });
+    });
+
+    $("#prev1").click(function() {
+        $("#dashboard2").fadeOut(300, function() {
+            $("#dashboard1").fadeIn(300);
+        });
+    });
+      
     
-    function prev1(){
-    $('#dashboard1').show();
-    $('#dashboard2').hide();
-    }
-    function next1(){
     
-    $('#dashboard1').hide();
-    $('#dashboard2').show();
-    }
 
 </script>
 </body>
