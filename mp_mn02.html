@@ -8,8 +8,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
     <div class="container">
@@ -25,7 +26,7 @@
         <!-- Menu Button -->
         <button class="menu-button" onclick="window.location.href='mp_mn01.html';">Menu</button>
         <!-- Button Grid -->
-        <div class="" style="overflow: auto; width: 100%;">
+        <div class="dashboard data mt-2" id="dashboard1" style="overflow: auto; width: 100%;">
             <!-- Opportunities Table -->
             <div class="card mb-3">
                 <div class="hhd" style="display: flex;">
@@ -67,7 +68,7 @@
                     
                     </div>
                     <div class="bg-info text-white text-right" style=" min-width: 50%;">
-                        Purchases &nbsp;
+                        &nbsp;&nbsp;Purchases &nbsp;
                     </div>
                 </div>
                 <table class="table table-borderless table-sm mb-0">
@@ -124,12 +125,133 @@
                 </div>
 
         </div>
-       
-        
-        
+        <div class="dashboard data mt-2" id="dashboard2" style="overflow: auto; width: 100%; background:#dc3545;">
+            <!-- Opportunities Table -->
+            <div class="card mb-3">
+                <div class="hhd" style="display: flex;">
+                    <div class="bg-success text-white text-left" style=" min-width: 50%; ">
+                        &nbsp;Opportunities
+                    </div>
+                    <div style="background-color: #ffffff;min-width: 50%;border-bottom: 2px solid #28a745;">
+                    
+                    </div>
+                </div>        
+                <table class="table table-borderless table-sm mb-0">
+                    <tbody>
+                        <tr>
+                            <td>Open Orders</td>
+                            <td class="text-right">20</td>
+                        </tr>
+                        <tr>
+                            <td>Open Order Value</td>
+                            <td class="text-right">12,350</td>
+                        </tr>
+                        <tr>
+                            <td>Back Order Value</td>
+                            <td class="text-right">12,405</td>
+                        </tr>
+                        <tr>
+                            <td>Back Order Items #</td>
+                            <td class="text-right">35</td>
+                        </tr>
+                        <tr>
+                            <td>Open Quotations Value</td>
+                            <td class="text-right">1,23,506</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="card mb-3">
+                <div class="hhd" style="display: flex;">
+                    <div style="background-color: #ffffff;min-width: 50%;border-bottom: 2px solid #17a2b8;">
+                    
+                    </div>
+                    <div class="bg-info text-white text-right" style=" min-width: 50%;">
+                        &nbsp;&nbsp;Purchases &nbsp;
+                    </div>
+                </div>
+                <table class="table table-borderless table-sm mb-0">
+                    <tbody>
+                        <tr>
+                            <td>Open Purchase Order</td>
+                            <td class="text-right">12,305.0</td>
+                        </tr>
+                        <tr>
+                            <td>Total Invoices Payable</td>
+                            <td class="text-right">23,451.0</td>
+                        </tr>
+                        <tr>
+                            <td>Payable Amt Due</td>
+                            <td class="text-right">3,451.0</td>
+                        </tr>
+                        <tr>
+                            <td>Next Payable Dt</td>
+                            <td class="text-right"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+                <!-- Cashflow Table -->
+                <div class="card mb-3">
+                    <div class="hhd" style="display: flex;">
+                        <div class="bg-danger text-white text-left" style=" min-width: 50%;">
+                            &nbsp;Cashflow
+                        </div>
+                        <div style="background-color: #ffffff;min-width: 50%;border-bottom: 2px solid #dc3545;">
+                        
+                        </div>
+                    </div>
+                    <table class="table table-borderless table-sm mb-0">
+                        <tbody>
+                            <tr>
+                                <td>Total Receivables</td>
+                                <td class="text-right"></td>
+                            </tr>
+                            <tr>
+                                <td>Total Payables</td>
+                                <td class="text-right"></td>
+                            </tr>
+                            <tr>
+                                <td>Receivables Today</td>
+                                <td class="text-right"></td>
+                            </tr>
+                            <tr>
+                                <td>Payables Today</td>
+                                <td class="text-right"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+        </div>
+    <div class="buttons mb-2 mt-2">
+    </div>      
     <footer class="footer">
+        <button style="border: none; background:none; " onclick="prev1()"><svg style="color: #ffa700;" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-left-circle-fill" viewBox="0 0 16 16">
+            <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0m3.5 7.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5z"/>
+          </svg></button>
         <img src="img/daveanlogo.png" alt="" height="20px">
+        <button style="border: none; background:none; " onclick="next1()"><svg style="color: #008b32;" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-right-circle-fill" viewBox="0 0 16 16">
+            <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z"/>
+          </svg></button>
     </footer>
     </div>
+<script>
+    $(document).ready(function () {
+        // Hide specific search bars on page load
+        $('#dashboard2').hide();
+      });
+    
+    function prev1(){
+    $('#dashboard1').show();
+    $('#dashboard2').hide();
+    }
+    function next1(){
+    
+    $('#dashboard1').hide();
+    $('#dashboard2').show();
+    }
+
+</script>
 </body>
 </html>
