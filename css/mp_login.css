@@ -1,0 +1,142 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body {
+    height: 100%;
+     /* overflow: hidden; Prevents scrolling */
+}
+
+.container {
+    height: 100dvh; /* Uses dynamic viewport height */
+    max-height: 100dvh; /* Prevents extra height */
+    overflow-y: auto; /* Allows scrolling only inside the container if needed */
+}
+
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Container */
+.container {
+    width: 90%; /* Allows flexibility */
+    max-width: 400px;
+    background: #fff;
+    height: 100dvh; /* Forces full viewport height */
+    max-height: 100dvh; /* Prevents extra height */
+    overflow-y: auto; /* Allows scrolling only inside the container if needed */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* overflow: hidden; */
+    padding: 20px 0;
+}
+
+/* Top Bar */
+.top-bar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 2px solid black;
+    background: #fff;
+}
+
+.logo {
+    font-size: 18px;
+    font-weight: bold;
+    color: #0078d7;
+}
+
+.admin {
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+}
+
+.admin a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+
+/* Menu Button */
+.menu-button {
+    width: auto; /* Adjust width as needed */
+    max-width: 250px;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: 1px solid #0078d7;
+    background: #fff;
+    color: #000;
+    cursor: pointer;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    margin-left: auto; /* Pushes it to the right */
+    display: block; /* Ensures it behaves like a block element */
+    margin-top: 15px ;
+    margin-right: 15px;
+}
+
+/* Button Grid */
+.button-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 10px;
+    padding: 20px;
+    width: 100%;
+    max-width: 350px;
+}
+
+.grid-item {
+    padding: 15px;
+    text-align: center;
+    background: linear-gradient(to bottom, #4a90e2, #0078d7);
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    border: none;
+}
+
+/* Hover Effect */
+.grid-item:hover {
+    background: linear-gradient(to bottom, #005bb5, #004494);
+    transform: scale(1.05);
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+/* Footer */
+.footer {
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    background: #ffffff;
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: auto;
+    border-top: 1px solid grey;
+}
+
+/* Responsive Design */
+@media (max-width: 320px) {
+    .button-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 600px;
+    }
+}
