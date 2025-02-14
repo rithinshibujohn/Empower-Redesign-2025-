@@ -11,6 +11,9 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    height: 100dvh;
+    max-height: 100dvh;
+    display: flex;
 }
 
 .main-wrapper {
@@ -20,6 +23,11 @@ body {
     border-radius: 20px;
     overflow: hidden;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.container{
+    padding: 0
+    ;
 }
 
 /* Curved Section with Background Color */
@@ -86,6 +94,7 @@ body {
 
 /* Footer */
 .footer {
+    position: sticky;
     width: 100%;
     text-align: center;
     padding: 10px;
@@ -95,3 +104,10 @@ body {
     margin-top: auto;
     border-top: 1px solid grey;
 }
+
+
+html, body {
+    height: 100%;
+     /* overflow: hidden; Prevents scrolling */
+}
+
