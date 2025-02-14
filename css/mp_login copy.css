@@ -27,8 +27,6 @@ body {
 }
 
 .container{
-    padding: 0
-    ;
 }
 
 /* Curved Section with Background Color */
@@ -104,11 +102,5 @@ body {
     font-weight: bold;
     margin-top: auto;
     border-top: 1px solid grey;
-}
-
-
-html, body {
-    height: 100%;
-     /* overflow: hidden; Prevents scrolling */
 }
 
